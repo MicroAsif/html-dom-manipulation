@@ -62,3 +62,67 @@ function paymentChange(value)
         var YEAR_OFFSET = 1970;
         alert("This person is " + (dateDiff.getFullYear()-YEAR_OFFSET) + " years old");
         });
+
+
+        //dropdown couutry, city, state
+
+        function countryChange(value)
+        {
+            var state = document.getElementById("state");
+
+            if (value == "usa") { 
+                state.innerHTML = `<select>
+                <option value="">State </option>
+                <option value="ny">NY</option>
+                <option value="la">LA</option>
+                <option value="ca">CA</option>
+                <option value="mi">MI</option>
+            </select>`
+                
+            }
+            else if (value == "uk") { 
+                state.innerHTML = `<select>
+                <option value="">State </option>
+                <option value="lo">LO</option>
+                <option value="ch">CH</option>
+                <option value="mu">MU</option>
+                <option value="li">LI</option>
+            </select>`
+                
+            }
+            else if (value == "bd") { 
+                state.innerHTML = `<select id="stateForm" onchange="stChange(this.value)">
+                <option value="">State </option>
+                <option value="dhk">DHK</option>
+                <option value="dnj">DNJ</option>
+                <option value="syl">SYL</option>
+                <option value="cht">CHT</option>
+            </select>`
+                
+            }
+            else if (value == "india") { 
+                state.innerHTML = `<select>
+                <option value="">State </option>
+                <option value="nd">ND</option>
+                <option value="mu">MU</option>
+                <option value="kt">KT</option>
+                <option value="ban">BAN</option>
+            </select>`
+                
+            }
+            else{
+                country.innerHTML = ""
+            }
+        }
+
+        function stChange(value){
+            alert(value);
+        }
+        //fomr validation
+
+        function numFunction()
+        {
+            var x = document.getElementById("num").value;
+            if(!isNaN(x) )
+            alert("valid")
+        }
