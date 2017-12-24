@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Dom Manupulation  with js </title>
+    </head>
+
+    
+    <body>
+            <select id="payment" onchange="paymentChange(this.value)">
+                    <option value=""> Select Payment Method </option>
+                    <option value="1">Checkout via Payal</option>
+                    <option value="2">Checkout via bKash </option>
+                    <option value="3">Check via Cheque</option>=
+            </select>
+
+            <div id="paymentFrm"> </div> 
+
+
+
+            <br/><br/><br/><br/>
+            <label for="admissionDate">admission date</label>
+            <input id="admissionDate" name="admissionDate" type="date" />  
+            <br />
+            <label for="graduationDate">graduation date</label>
+            <input id="graduationDate" name="graduationDate" type="date" /> 
+            <br />
+            <label for="birthDate" >birth date</label>
+            <input id="birthDate" type="date" name="birthDate" />
+            <br />
+            <button id="age">Get Age</button>
+
+    </body>
+
+    <script type="text/javascript" src="../script/input.js"></script>
+    
+</html>
