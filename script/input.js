@@ -1,8 +1,10 @@
+//Changing from accoring to dropdown list  function
+
 function paymentChange(value)
         {
             var frm = document.getElementById("paymentFrm");
             if (value == 1) { 
-                frm.innerHTML = `<form action="/action_page.php">
+                frm.innerHTML = `<form >
                                 Email:<br>
                                 <input type="email" name="email" value="">
                                 <br>
@@ -14,10 +16,14 @@ function paymentChange(value)
                 
             }
             else if (value == 2){ 
-                frm.innerHTML = `<form action="/action_page.php">
+                frm.innerHTML = `<form >
                                 bKash Account No:<br>
-                                <input type="text" name="text" value="">
+                                <input type="text" name="account" value="">
                                 <br>
+
+                                TXT Id No:<br>
+                                <input type="text" name="txtId" value="">
+                                <br/>
                                 Amount of Pay:<br>
                                 <input type="text" name="amount" value="">
                                 <br><br>
@@ -25,7 +31,7 @@ function paymentChange(value)
                                 </form>` 
             }
             else if (value == 3){
-                frm.innerHTML = `<form action="/action_page.php">
+                frm.innerHTML = `<form >
                                 Bank Name:<br>
                                 <input type="text" name="text" value="">
                                 <br>
@@ -45,24 +51,7 @@ function paymentChange(value)
                 frm.innerHTML = "" 
             }
    
-        };
-
-
-
-        var doc = document;
-        var admission = doc.getElementById("admissionDate");
-        var graduation = doc.getElementById("graduationDate");
-        var birth = doc.getElementById("birthDate");
-        var age = doc.getElementById("age");
-        
-        age.addEventListener("click", function(){
-        var gradDate = new Date(graduation.value);
-        var birthDate = new Date(birth.value);
-        var dateDiff = new Date(gradDate - birthDate);
-        var YEAR_OFFSET = 1970;
-        alert("This person is " + (dateDiff.getFullYear()-YEAR_OFFSET) + " years old");
-        });
-
+        };  
 
         //dropdown couutry, city, state
 
@@ -111,18 +100,32 @@ function paymentChange(value)
                 
             }
             else{
-                country.innerHTML = ""
+                country.innerHTML = "";
             }
         }
 
         function stChange(value){
             alert(value);
+            var city = document.getElementById("city"); 
+            if (value=="dhk"){ 
+                city.innerHTML = `<select>
+                <option value="">select city </option>
+                <option value="md">Mohammadpur </option>
+                <option value="ba">Badda</option>
+                <option value="ba">Banani</option>
+                <option value="gu">Gulshan</option>
+            </select>`
+            }
+            if (value == "dnj"){ 
+                city.innerHTML = `<select>
+                <option value="">select city </option>
+                <option value="ka">Kalitola </option>
+                <option value="bi">Birol</option>
+                <option value="bi">Birgonj</option>
+                <option value="Di">Dinajpur</option>
+            </select>`
+            }
         }
-        //fomr validation
+       
 
-        function numFunction()
-        {
-            var x = document.getElementById("num").value;
-            if(!isNaN(x) )
-            alert("valid")
-        }
+        
