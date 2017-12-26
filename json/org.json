@@ -1,0 +1,70 @@
+[
+  {
+    "name":"Apple",
+    "location":"Seattle, WA"
+  },
+  {
+    "name":"Facebook",
+    "location":"Muscatine, IA"
+  },
+  {
+    "name":"Twitter",
+    "location":"Seattle, WA"
+  },
+  {
+    "name":"Snapchat",
+    "location":"Albuquerque, NM"
+  },
+  {
+    "name":"Linkedin",
+    "location":"Buckeystown, MD"
+  },
+  {
+    "name":"Uber",
+    "location":"Atlanta, GA"
+  },
+  {
+    "name":"Google",
+    "location":"Zanesville, OH"
+  },
+  {
+    "name":"Amazon",
+    "location":"Gilbert, AZ"
+  },
+  {
+    "name":"Whatsapp",
+    "location":"Baltimore, MD"
+  },
+  {
+    "name":"Imo",
+    "location":"Baltimore, MD"
+  },
+  {
+    "name":"Microsoft",
+    "location":"Hallandale Beach, FL"
+  },
+  {
+    "name":"Soundcloud",
+    "location":"Zanesville, OH"
+  },
+  {
+    "name":"Huawei",
+    "location":"Garner, NC"
+  },
+  {
+    "name":"LG",
+    "location":"Cabin John, MD"
+  },
+  {
+    "name":"Newscreed",
+    "location":"Los Angeles, CA"
+  },
+  {
+    "name":"Vier",
+    "location":"San Jose, CA"
+  },
+  {
+    "name":"VB",
+    "location":"Bakersfield, CA"
+  }
+]

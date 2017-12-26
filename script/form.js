@@ -1,3 +1,7 @@
+
+
+//Crrent working
+
 var check = document.getElementById("current");
 check.checked = true;
 var end = document.getElementById("endWork").style.visibility = "hidden";

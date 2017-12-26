@@ -18,5 +18,5 @@ function Calc(operator){
         r.innerText ="result :  " + (numberOne % numberTwo);
     if (operator == "^")
         r.innerText ="result :  " + (numberOne ** numberTwo);
-    };
+};
     
