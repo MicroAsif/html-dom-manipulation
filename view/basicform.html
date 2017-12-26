@@ -8,39 +8,37 @@
 </head>
 <body>
         <form>
-                <button>Add Work</button>
+              
                 <fieldset>
                  <legend>You Work Experience:</legend>
-                 <button id="close" style="margin-left:1300px;">x</button><br>
-                 <table>
-                 <tr>
-                     <td>Company:</td>
-                   <td><input type="text"></td>
-                 </tr>
-                 <tr>
-                     <td>Position:</td>
-                   <td><input type="text"></td>
-                 </tr>
-                 <tr>
-                     <td>City:</td>
-                   <td><input type="text"></td>
-                 </tr>
-                 <tr>
-                     <td>Description:</td>
-                   <td><input type="text"></td>
-                 </tr>
-                 <tr>
-                     <td>Time Period:</td>
-                   <td><input type="date" name="bday"></td>
-                 </tr>
-                 <tr>
-                     <td>Finished:</td>
-                   <td><input type="date" name="bday"></td>
-                 </tr>
-                 </table>
-                 <input type="checkbox" name="">Currently working<br>
+                    Company&ensp;&ensp;:
+                   <input type="text"> <br/> <br/>
+                 
+                
+                    Position &ensp;&ensp;&ensp;:
+                   <input type="text">
+                   <br/> <br/>
+
+                   City&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;:
+                   <input type="text">
+                   <br/> <br/>
+
+                Description&ensp;:
+                  <input type="text">
+                  <br/> <br/>
+
+                 Time Period:
+                  <input type="checkbox" id="current" onclick="checkState()" />Currently working here <br/> <br/>
+                  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                  <input type="date" name="bday" id="startWork"/> <span id="msg">to present</span><br/> <br/> 
+                  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                  <input type="date" name="bday" id="endWork"/> <br/> <br/>
+               
+                  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                  <button>Save</button>
                 </fieldset>
                </form>
+
+               <script src="../script/form.js"></script>
 </body>
 </html>
