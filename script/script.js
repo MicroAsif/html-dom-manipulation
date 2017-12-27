@@ -19,4 +19,22 @@ function Calc(operator){
     if (operator == "^")
         r.innerText ="result :  " + (numberOne ** numberTwo);
 };
+
+
+var images = ["1.jpg", "2.jpg", "3.jpg"];
+var counter = 1;
+function change(value) { 
+    
+    if(value=='n'){
+        var img = document.getElementById("imgholder");	
+        img.src = images[counter--];
+        if(counter==0)
+            counter = images.length-1;
+    }else{
+        var img = document.getElementById("imgholder");	
+        img.src = images[counter++];
+        if(counter==images.length)
+            counter = 0;
+    }
+}
     

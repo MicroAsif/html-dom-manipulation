@@ -3,6 +3,9 @@
         <title>Dom Manupulation  with js </title>
     </head>
     <body>
+
+        <p>Basic operation like input and output </p> 
+        <br/> <br>
         Input 1  : <input type="text" id="txt1" /> <br/> <br/>
         Input 2  : <input type="text" id="txt2" /> <br/> <br/>
         <p id="result"></p>
@@ -12,8 +15,16 @@
         <input type="button"  value="/" onclick="Calc('/');"/> 
         <input type="button"  value="%" onclick="Calc('%')"/>  
         <input type="button"  value="**" onclick="Calc('^')"/> 
-       
-    
+        <br/> <br/>
+        <hr/> 
+        <p>Simple Image Slider </p>
+        <br/> 
+
+
+        <img id="imgholder" src="1.jpg" height="200">
+        <hr/>
+        <input type="button" value="PREV" onclick="change('p')"/>
+        <input type="button" value="NEXT" onclick="change('n')"/>
 
         <script src="script/script.js"></script>
     </body>
