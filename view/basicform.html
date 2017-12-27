@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
 </head>
 <body>
         <form>
@@ -13,15 +13,24 @@
                 <fieldset>
                  <legend>You Work Experience:</legend>
                     Company&ensp;&ensp;:
-                   <input name="search" id="search" type="text"> <br/> <br/>
-                   <div id="update"></div>
-                
+                   <input name="search" id="work" onkeyup="myFunction();" type="text"> <br/> <br/>
                     Position &ensp;&ensp;&ensp;:
                    <input type="text">
                    <br/> <br/>
 
-                   City&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;:
-                   <input type="text">
+                   Experience&ensp;&ensp;:
+                    <select id="exp">
+                        <option value="">Select Experience </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
                    <br/> <br/>
 
                 Description&ensp;:
@@ -36,31 +45,11 @@
                   <input type="date" name="bday" id="endWork"/> <br/> <br/>
                
                   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                 <button>Save</button>
+                <input type="button" value="Save" onclick="SubmitData()" /> 
                 </fieldset>
                </form>
 
-
-               <script src="../script/form.js"></script>
-                <script>
-                    $('#search').keyup(function(){
-                        var searchField = $('#search').val();
-                        var myExp = new RegExp(searchField, 'i');
-                        $.getJSON('../json/org.json', function(data){
-                        var output = '<ul>';
-                        $.each(data, function(key, val){
-                        if((val.name.search(myExp) != -1) || (val.location.search(myExp) != -1)) {
-                        output +='<li>';
-                        output +='<p>' + val.name + '</p>';
-                        output +='<p>' + val.location + '</p>';
-                        output +='</li>';
-                        }
-                        });
-                        output += '</ul>';
-                        $('#update').html(output);
-                    });
-                    });
-
-                </script>
+            <script src="../script/form.js"></script>
+              
 </body>
 </html>
