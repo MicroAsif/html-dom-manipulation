@@ -37,4 +37,18 @@ function change(value) {
             counter = 0;
     }
 }
-    
+
+
+
+function ReserVationCheck() { 
+    var checks = document.getElementsByName('resCheck'); 
+    var selected = [];
+   
+    for (var i=0; i<checks.length; i++) {
+        if (checks[i].checked) {
+            selected.push(checks[i].value);
+            alert(checks[i].value);
+        }
+    }
+   
+}    
