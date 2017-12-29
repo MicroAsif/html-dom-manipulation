@@ -42,13 +42,16 @@ function change(value) {
 
 function ReserVationCheck() { 
     var checks = document.getElementsByName('resCheck'); 
-    var selected = [];
-   
+    var checkRes = [];
+
     for (var i=0; i<checks.length; i++) {
         if (checks[i].checked) {
-            selected.push(checks[i].value);
             alert(checks[i].value);
+            checkRes.push(checks[i].value);
         }
     }
-   
-}    
+    if (checkRes.length <= 0){ 
+        alert("no seat is selected!");
+    }
+  
+}
