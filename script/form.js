@@ -1,21 +1,30 @@
-
-function myFunction() {
-    var x = document.getElementById("work").value;
-    console.log(x);
-
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myArr = JSON.parse(this.responseText);
-        array.forEach(element => {
-            document.getElementById("demo").innerHTML = myArr.element.name;
-        });
-        
-        }   
-    };
-    xmlhttp.open("GET", "../json/org.txt", true);
-    xmlhttp.send();
+function DivClicked() { 
+    console.log("div clicked!");
 }
+
+function ButtonClick() { 
+    console.log("button clicked!");
+}
+
+
+
+// function myFunction() {
+//     var x = document.getElementById("work").value;
+//     console.log(x);
+
+//     var xmlhttp = new XMLHttpRequest();
+//     xmlhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var myArr = JSON.parse(this.responseText);
+//         array.forEach(element => {
+//             document.getElementById("demo").innerHTML = <p>myArr.element.name</p>;
+//         });
+        
+//         }   
+//     };
+//     xmlhttp.open("GET", "../json/org.txt", true);
+//     xmlhttp.send();
+// }
  
 
 
