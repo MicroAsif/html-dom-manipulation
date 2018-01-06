@@ -19,6 +19,18 @@ function Calc(operator){
     if (operator == "^")
         r.innerText ="result :  " + (numberOne ** numberTwo);
 };
+var text_max = 100;
+function LengthCounter() { 
+    
+    var msgLength = document.getElementById("message").value.length;
+    var result = document.getElementById("counter");
+    var textrRemaining = text_max - msgLength;
+    result.innerHTML = textrRemaining + " Characters Remaining ";
+
+  }
+   
+   
+
 
 
 var images = ["1.jpg", "2.jpg", "3.jpg"];
